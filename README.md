@@ -16,21 +16,24 @@ background scanning, automatic retry, or saved bank ID. The first matching
 terminal in the live list is used. Missing Kbcentral or terminal produces only
 a local chat message. Apcmanager handles authorization, including officer alts.
 
-## Build from a clean checkout
+## Pull, compile, use
 
-For Visual Studio: install Visual Studio 2022 with **.NET desktop development**,
-open **BankId.sln**, select **Release | x86**, then choose **Build > Build Solution**.
-NuGet packages restore automatically; internet access is required on the first build.
+1. Open **BankId.sln** in Visual Studio 2022 with **.NET desktop development** installed.
+2. Select **Release | x86**, then **Build > Build Solution**. NuGet restores the pinned public packages automatically.
+3. Take **bin/Release/BankId.dll** and load it in AOSharp.
 
-For the command line, install the .NET SDK. From this repository's directory:
+That is the compiled plugin. No source file or solution file goes into AOSharp.
+Debug builds likewise produce `bin/Debug/BankId.dll`. Solution and project builds
+use these same output folders.
+
+For command-line builds with the .NET SDK, run from this directory:
 
 ```powershell
-dotnet restore BankId.csproj --configfile NuGet.Config
-dotnet build BankId.csproj -c Release --no-restore
+dotnet build BankId.sln -c Release
 ```
 
-Output: `bin/x86/Release/net48/BankId.dll` when building the solution in
-Visual Studio; `bin/Release/net48/BankId.dll` with the project command above.
+This restores and compiles in one command, producing `bin/Release/BankId.dll`.
+Internet access is required for the first package restore.
 
 Both build dependencies are exact-version public NuGet packages:
 

@@ -7,6 +7,9 @@
     <AssemblyName>BankId</AssemblyName>
     <RootNamespace>BankId</RootNamespace>
     <Deterministic>true</Deterministic>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AOSharpSDK" Version="[1.0.105]" ExcludeAssets="runtime" />
