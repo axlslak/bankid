@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankId", "BankId.csproj", "{B7241BB7-EF64-4319-AFE7-223C2941340C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7241BB7-EF64-4319-AFE7-223C2941340C}.Debug|x86.ActiveCfg = Debug|x86
+		{B7241BB7-EF64-4319-AFE7-223C2941340C}.Debug|x86.Build.0 = Debug|x86
+		{B7241BB7-EF64-4319-AFE7-223C2941340C}.Release|x86.ActiveCfg = Release|x86
+		{B7241BB7-EF64-4319-AFE7-223C2941340C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

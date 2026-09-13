@@ -18,15 +18,19 @@ a local chat message. Apcmanager handles authorization, including officer alts.
 
 ## Build from a clean checkout
 
-On Windows, install the .NET SDK (or Visual Studio 2022 with .NET desktop
-development). From this repository's directory:
+For Visual Studio: install Visual Studio 2022 with **.NET desktop development**,
+open **BankId.sln**, select **Release | x86**, then choose **Build > Build Solution**.
+NuGet packages restore automatically; internet access is required on the first build.
+
+For the command line, install the .NET SDK. From this repository's directory:
 
 ```powershell
 dotnet restore BankId.csproj --configfile NuGet.Config
 dotnet build BankId.csproj -c Release --no-restore
 ```
 
-Output: `bin/Release/net48/BankId.dll`.
+Output: `bin/x86/Release/net48/BankId.dll` when building the solution in
+Visual Studio; `bin/Release/net48/BankId.dll` with the project command above.
 
 Both build dependencies are exact-version public NuGet packages:
 
